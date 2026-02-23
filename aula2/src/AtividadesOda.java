@@ -1,9 +1,5 @@
-import java.util.Scanner;
-
 public class AtividadesOda {
-    final static Scanner SCAN = new Scanner(System.in);
-
-    static MetodosGerais chave = new MetodosGerais();
+    static MetodosGerais chave = new MetodosGerais(5);
 
     static void definirMatrizAdição(int[][] matriz) {
         for (int i = 0; i < matriz.length; i++) {
