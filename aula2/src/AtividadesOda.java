@@ -1,5 +1,5 @@
 public class AtividadesOda {
-    static MetodosGerais chave = new MetodosGerais(5);
+    static MetodosGerais chave = new MetodosGerais();
 
     static void definirMatrizAdição(int[][] matriz) {
         for (int i = 0; i < matriz.length; i++) {
@@ -11,7 +11,7 @@ public class AtividadesOda {
 
     static void definirMatrizParImpar(int[][] matriz) {
         for (int i = 0; i < matriz.length; i++) {
-            for (int j = 0; j < matriz.length; j++) {
+            for (int j = 0; j < matriz[0].length; j++) {
                 if ((i+j) % 2 == 0) {
                     matriz[i][j] = -1*(int)Math.pow(i, 2);
                 } else {
